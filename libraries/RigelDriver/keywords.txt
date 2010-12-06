@@ -1,0 +1,8 @@
+RigelDriver	KEYWORD1
+driveForward	KEYWORD2
+driveBackwards	KEYWORD2
+spinLeft	KEYWORD2
+spinRight	KEYWORD2
+steerLeft	KEYWORD2
+steerRight	KEYWORD2
+

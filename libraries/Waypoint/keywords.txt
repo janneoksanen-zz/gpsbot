@@ -1,0 +1,14 @@
+Waypoint	KEYWORD1
+setLongitude	KEYWORD2
+setLatitude	KEYWORD2
+setName	KEYWORD2
+setNSHemisphere	KEYWORD2
+setEWHemisphere	KEYWORD2
+getLongitude	KEYWORD2
+getLatitude	KEYWORD2
+getNSHemisphere	KEYWORD2
+getEWHemisphere	KEYWORD2
+getName	KEYWORD2
+setNext	KEYWORD2
+getNext	KEYWORD2
+

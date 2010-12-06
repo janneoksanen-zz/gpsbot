@@ -1,0 +1,11 @@
+GPSNavigator	KEYWORD1
+setLocation	KEYWORD2
+setDestination	KEYWORD2
+setRoute	KEYWORD2
+setNSSpeed	KEYWORD2
+setEWSpeed	KEYWORD2
+setHeading	KEYWORD2
+getBearing	KEYWORD2
+getDistance	KEYWORD2
+getDestinationName	KEYWORD2
+

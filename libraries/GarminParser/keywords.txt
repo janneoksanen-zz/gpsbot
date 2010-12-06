@@ -1,0 +1,12 @@
+GarminParser	KEYWORD1
+parseString	KEYWORD2
+getLongitude	KEYWORD2
+getLatitude	KEYWORD2
+getLongHem	KEYWORD2
+getLatHem	KEYWORD2
+getError	KEYWORD2
+getAltitude	KEYWORD2
+getSpeed	KEYWORD2
+getHeading	KEYWORD2
+getTime	KEYWORD2
+
