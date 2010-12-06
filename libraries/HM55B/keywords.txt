@@ -1,0 +1,5 @@
+HM55B	KEYWORD1
+reset	KEYWORD2
+getHeading	KEYWORD2
+getStableHeading	KEYWORD2
+
