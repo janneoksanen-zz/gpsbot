@@ -23,7 +23,6 @@
  * @section Licence
  * Published under GPLv2.
  */
-
 class GPSNavigator {
 	
   public:

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>GPSBot: GPSRoute Class Reference</title>
+<title>GPSBot: HM55B Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -43,38 +43,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <div class="contents">
-<h1>GPSRoute Class Reference</h1><!-- doxytag: class="GPSRoute" -->
-<p>Linked list of Waypoints that represent a route.  
+<h1>HM55B Class Reference</h1><!-- doxytag: class="HM55B" -->
+<p>Driver for Hitachi <a class="el" href="classHM55B.html" title="Driver for Hitachi HM55B Compass Module.">HM55B</a> Compass Module.  
 <a href="#_details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="GPSRoute_8h_source.html">GPSRoute.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="HM55B_8h_source.html">HM55B.h</a>&gt;</code></p>
 
-<p><a href="classGPSRoute-members.html">List of all members.</a></p>
+<p><a href="classHM55B-members.html">List of all members.</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGPSRoute.html#af88e4d8510052fff1b4ec78e681b4365">GPSRoute</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Class constructor.  <a href="#af88e4d8510052fff1b4ec78e681b4365"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWaypoint.html">Waypoint</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGPSRoute.html#afa1d78bacbde12ce820dcb7278a5d6d1">getFirst</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns a pointer to the first <a class="el" href="classWaypoint.html" title="GPS Waypoint class.">Waypoint</a>::  <a href="#afa1d78bacbde12ce820dcb7278a5d6d1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGPSRoute.html#af26110e6f6cbd84c1dc7df902230b0a1">size</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the number of Waypoints.  <a href="#af26110e6f6cbd84c1dc7df902230b0a1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGPSRoute.html#a822d60f8c42300f28eb8e87b53f8e0a9">addNode</a> (<a class="el" href="classWaypoint.html">Waypoint</a> *wp)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds a <a class="el" href="classWaypoint.html" title="GPS Waypoint class.">Waypoint</a> to the beginning to the linked list.  <a href="#a822d60f8c42300f28eb8e87b53f8e0a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHM55B.html#a55317f3e08297dcbd2f67e0bbc44a3ba">HM55B</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Maps the pins to ones defined in the other header and resets the module.  <a href="#a55317f3e08297dcbd2f67e0bbc44a3ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHM55B.html#a933499f6780ac624004f45a5e98d47f4">reset</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Resets the compass module.  <a href="#a933499f6780ac624004f45a5e98d47f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHM55B.html#a75ee6dda824c2bcce2bbb6c3b57ba72f">getHeading</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the heading.  <a href="#a75ee6dda824c2bcce2bbb6c3b57ba72f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHM55B.html#a49ba1beb815d85f37525922fe03d73e4">getStableHeading</a> (int sample_size)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Measures the heading <em>sample_size</em> times and returns the average.  <a href="#a49ba1beb815d85f37525922fe03d73e4"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Linked list of Waypoints that represent a route. </p>
-<dl class="author"><dt><b>Author:</b></dt><dd>Janne Oksanen <a href="mailto:janne.oksanen@gmail.com">janne.oksanen@gmail.com</a></dd></dl>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classWaypoint.html" title="GPS Waypoint class.">Waypoint</a></dd></dl>
+<p>Driver for Hitachi <a class="el" href="classHM55B.html" title="Driver for Hitachi HM55B Compass Module.">HM55B</a> Compass Module. </p>
+<p>Lib for my GPS navigating robot car project. It's heavily based on code by kiilo (<a href="mailto:kiilo@kiilo.org">kiilo@kiilo.org</a>) that was published at the Arduino site. Basically I just took his code and made an object out of it with very slight modifications to make it directly compatible with the navigation library I wrote for the robot.</p>
+<dl class="author"><dt><b>Author:</b></dt><dd>Janne Oksanen <a href="mailto:janne.oksanen@gmail.com">janne.oksanen@gmail.com</a> </dd></dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.arduino.cc/playground/Main/HM55B">http://www.arduino.cc/playground/Main/HM55B</a> </dd></dl>
 <h2><a class="anchor" id="Licence">
 Licence</a></h2>
 <p>Published under GPLv2. </p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af88e4d8510052fff1b4ec78e681b4365"></a><!-- doxytag: member="GPSRoute::GPSRoute" ref="af88e4d8510052fff1b4ec78e681b4365" args="()" -->
+<a class="anchor" id="a55317f3e08297dcbd2f67e0bbc44a3ba"></a><!-- doxytag: member="HM55B::HM55B" ref="a55317f3e08297dcbd2f67e0bbc44a3ba" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GPSRoute::GPSRoute </td>
+          <td class="memname">HM55B::HM55B </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -84,38 +85,17 @@ Licence</a></h2>
 </div>
 <div class="memdoc">
 
-<p>Class constructor. </p>
-<p>Sets count to 0 and first to null. </p>
+<p>Maps the pins to ones defined in the other header and resets the module. </p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a822d60f8c42300f28eb8e87b53f8e0a9"></a><!-- doxytag: member="GPSRoute::addNode" ref="a822d60f8c42300f28eb8e87b53f8e0a9" args="(Waypoint *wp)" -->
+<a class="anchor" id="a75ee6dda824c2bcce2bbb6c3b57ba72f"></a><!-- doxytag: member="HM55B::getHeading" ref="a75ee6dda824c2bcce2bbb6c3b57ba72f" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GPSRoute::addNode </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classWaypoint.html">Waypoint</a> *&nbsp;</td>
-          <td class="paramname"> <em>wp</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Adds a <a class="el" href="classWaypoint.html" title="GPS Waypoint class.">Waypoint</a> to the beginning to the linked list. </p>
-
-</div>
-</div>
-<a class="anchor" id="afa1d78bacbde12ce820dcb7278a5d6d1"></a><!-- doxytag: member="GPSRoute::getFirst" ref="afa1d78bacbde12ce820dcb7278a5d6d1" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classWaypoint.html">Waypoint</a>* GPSRoute::getFirst </td>
+          <td class="memname">float HM55B::getHeading </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -125,17 +105,38 @@ Licence</a></h2>
 </div>
 <div class="memdoc">
 
-<p>Returns a pointer to the first <a class="el" href="classWaypoint.html" title="GPS Waypoint class.">Waypoint</a>:: </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>pointer to the first Waypoin </dd></dl>
+<p>Returns the heading. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>[-PI;PI] with East being 0 and North -PI/2 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af26110e6f6cbd84c1dc7df902230b0a1"></a><!-- doxytag: member="GPSRoute::size" ref="af26110e6f6cbd84c1dc7df902230b0a1" args="()" -->
+<a class="anchor" id="a49ba1beb815d85f37525922fe03d73e4"></a><!-- doxytag: member="HM55B::getStableHeading" ref="a49ba1beb815d85f37525922fe03d73e4" args="(int sample_size)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GPSRoute::size </td>
+          <td class="memname">float HM55B::getStableHeading </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>sample_size</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Measures the heading <em>sample_size</em> times and returns the average. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>average of <em>sample_size</em> number of measurements. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a933499f6780ac624004f45a5e98d47f4"></a><!-- doxytag: member="HM55B::reset" ref="a933499f6780ac624004f45a5e98d47f4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HM55B::reset </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -145,13 +146,12 @@ Licence</a></h2>
 </div>
 <div class="memdoc">
 
-<p>Returns the number of Waypoints. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>number of Waypoints. </dd></dl>
+<p>Resets the compass module. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>libraries/GPSRoute/<a class="el" href="GPSRoute_8h_source.html">GPSRoute.h</a></li>
+<li>libraries/HM55B/<a class="el" href="HM55B_8h_source.html">HM55B.h</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
